@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  margin-left: 200px;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #e4e4e4;
+  min-height: 100vh;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin: 20px;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff0000;
+  margin: 20px;
+}
+
+.element-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 490px) {
+  .content {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+}

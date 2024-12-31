@@ -1,0 +1,126 @@
+.back-btn {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.2s ease;
+  border-radius: 5px;
+  background-color: #d6d6d6;
+  border: none;
+  z-index: 100;
+
+  &:hover {
+    background-color: #c2c2c2;
+  }
+}
+
+.product-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.edit-mode-title {
+  text-align: center;
+  color: #333;
+}
+
+.product-page img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f0f0f0;
+}
+
+.product-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px 0 20px ;
+}
+
+.product-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.product-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-title span {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #18aa55;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  font-size: 1.2rem;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+@media (min-width: 490px) and (max-width: 1200px) {
+  .back-btn {
+    left: 200px;
+    top: 0;
+    border-radius: 0 0 5px 0;
+  }
+}
+
+@media (max-width: 490px) {
+  .back-btn {
+    left: 0;
+    top: 0;
+    border-radius: 0 0 5px 0;
+  }
+  .product-page {
+    margin: -20px;
+    height: 105%;
+  }
+}

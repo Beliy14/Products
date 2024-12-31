@@ -1,0 +1,44 @@
+.success-alert {
+  color: #32992fc9;
+  background-color: #eeeeeec9;
+  border: 1px solid #32992fc9;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 101;
+  transform: translate(-15%);
+}
+.success-alert div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  font-size: 1.2rem;
+  gap: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.close-success-alert {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 490px) {
+  .success-alert {
+    transform: translate(-50%);
+  }
+  .success-alert div {
+    padding: 10px;
+  }
+  .success-alert > div > svg {
+    display: none;
+  }
+}
